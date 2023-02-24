@@ -1,5 +1,7 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
+
 import img1 from "/Users/a/Desktop/Capstone_two/setup/src/Assets/step1.png";
 import img2 from "/Users/a/Desktop/Capstone_two/setup/src/Assets/step2.png";
 import img3 from "/Users/a/Desktop/Capstone_two/setup/src/Assets/step3.png";
@@ -8,59 +10,83 @@ const HowItworks = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <h1 className="primary-heading">How It Works</h1>
+        <h1 className="secondry-heading">How It Works</h1>
       </div>
-      <div style={{ display: "block", width: "95%",}}>
-        <h5 style={{ marginLeft: 30, color: "#808080" }}>STEP1 </h5>
-        <Row
-          style={{
-            marginTop: 30,
-          }}
-        >
-          <h1 style={{ color: "#F58929", marginLeft: 30, fontSize: 30}}>
-            Browser through our <br></br>amazing listings
-          </h1>
+      <Row>
+        <Col>
 
-          <img src={img1} style={{ marginLeft: '30%',width: '20%',height: '20%' }}>
-          </img>
-        </Row>
-        <Row
-          style={{
-            marginTop: 30,
-          }}
-        >
-          
+        <Card className="bg-dark text-white" style={{margin:'3%',color:'#808080'}}>
+        <Card.Text style={{margin:'3%',color:'#808080'}}>
+          step1
+        </Card.Text>
+        <Card.Title style={{marginBottom:'1%',fontSize:'50px',color: '#F58929',marginLeft:'3%'}}>Browse through our <br/>hot deals</Card.Title>
+        <Card.Text style={{margin:'3%',color:'#404040'}}>
+        We have partnered with trusted retailers to get the best deals in town on our platform.<br/>
+Browse through their offers shop by shop and find deals near you.
+Each product contains details on nutritional value, sell-by date and number of <br/>products remaining at that offer. Hurry while stocks last!
+        </Card.Text>
+          </Card>     
+             </Col>
+        <Col>
+        <Card className="bg-dark text-white">
+        <Card.Img src={img1} alt="Card image" style={{height:'100%',width:'50%',marginLeft:'20%',marginTop:'5%'}} />
+          </Card>   
+        </Col>
+      </Row>
+      <Row>
+      <Col>
+        <Card className="bg-dark text-white">
+        <Card.Img src={img2} alt="Card image" style={{height:'100%',width:'50%',marginLeft:'30%'}} />
+          </Card>   
+        </Col>
+        <Col>
 
-          <img src={img2} style={{ marginLeft: '20%',width: '20%',height: '20%' }}>
-          </img>
-          <h1 style={{ color: "#F58929", marginLeft: '30%', fontSize: 30}}>
-          Verify your investment qualifications
-          </h1>
-        </Row>
-        <Row
-          style={{
-            marginTop: 30,
-          }}
-        >
-          <h1 style={{ color: "#F58929", marginLeft: 50, fontSize: 30,marginTop:20}}>
-          Start exploring vetted campaigns
-          </h1>
+<Card className="bg-dark text-white" style={{margin:'3%',color:'#808080'}}>
+<Card.Text style={{margin:'3%',color:'#808080'}}>
+  step2
+</Card.Text>
+<Card.Title style={{marginBottom:'1%',fontSize:'50px',color: '#F58929',marginLeft:'3%'}}>Verify your purchase and pay</Card.Title>
+<Card.Text style={{margin:'3%',color:'#404040'}}>
+After you have finished selecting your products, check your cart to make sure you have collected all you need. You will then be prompted to pay using your preferred payment method.</Card.Text>
+  </Card>     
+     </Col>
+      
+      </Row>
+      <Row>
+        <Col>
 
-          <img src={img3} style={{ marginLeft: '30%',width: '20%',height: '20%' }}>
-          </img>
-        </Row>
-
-        {/* <h5 style={{ color: "#404040", marginLeft: 30, fontWeight: "10",fontSize:'10' }}>
-          Getting started is as easy as entering your name and <br />
-          email address, then verifying your identity on the platform.
-          <br />
-          As a registered investor, you can scan through all the campaigns on{" "}
-          <br />
-          our system and invest in any of your choice.
-          <br /> Learn more about verifying your identity and how we secure
-          sensitive information.
-        </h5> */}
-      </div>
+        <Card className="bg-dark text-white" style={{margin:'3%',color:'#808080'}}>
+        <Card.Text style={{margin:'3%',color:'#808080'}}>
+          step3
+        </Card.Text>
+        <Card.Title style={{marginBottom:'1%',fontSize:'50px',color: '#F58929',marginLeft:'3%'}}>Choose your delivery option</Card.Title>
+        <Card.Text style={{margin:'3%',color:'#404040'}}>
+        We aim to connect you to shops nearest to you, so you have the option of using <br/> our courier partner, or passing by the shop and collecting your shopping within the same day you purchase.
+        </Card.Text>
+          </Card>     
+             </Col>
+        <Col>
+        <Card className="bg-dark text-white">
+        <Card.Img src={img3} alt="Card image" style={{height:'100%',width:'50%',marginLeft:'20%',marginTop:'5%'}} />
+          </Card>   
+        </Col>
+      </Row>
+      {/* <Card className="bg-dark text-white">
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </Card.Text>
+      <Card.Img src={img1} alt="Card image" style={{height:'10%',width:'10%'}} />
+      <Card.ImgOverlay>
+        <Card.Title>Card title</Card.Title>
+        <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </Card> */}
     </div>
   );
 };

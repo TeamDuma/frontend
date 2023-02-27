@@ -1,5 +1,4 @@
 import React from "react";
-import "/Users/a/Desktop/Capstone_two/setup/src/components/shared/product-listing/productCardStyles.css";
 import "../../../components/shared/product-listing/productCardStyles.css";
 
 interface ProductCardProps {

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import logo from "../../Assets/home-banner-image.png";
+import '../../../src/App.css'
 
-import '/Users/a/Desktop/Capstone_two/setup/src/App.css'
 export default class Hero extends Component {
   render(): React.ReactNode {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 // import ProfilePic from "../Assets/john-doe-image.png";
-import { AiFillStar } from "react-icons/ai";
+// import { AiFillStar } from "react-icons/ai";
 
 const Reviews = () => {
   return (

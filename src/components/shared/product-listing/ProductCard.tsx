@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductCardStyles.css";
+import "/Users/a/Desktop/Capstone_two/setup/src/components/shared/product-listing/productCardStyles.css";
 
 interface ProductCardProps {
   shopImageUrl: string;
@@ -22,7 +22,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <div>
-      <div className="card">
+      <div className="card-content">
         <div className="top-item">
           <img className="shop-image" src={shopImageUrl} alt="Workflow" />
           <div className="discount-container">

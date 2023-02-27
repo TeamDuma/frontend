@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./header";
 import Footer from "./footer";
-import ProductCard from "./shared/ProductCard";
+import ProductCard from "./shared/product-listing/ProductCard";
 
 export default class Products extends Component {
   data = [

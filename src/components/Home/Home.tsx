@@ -8,7 +8,6 @@ import Reviews from "./Reviews";
 import HotDeals from "./HotDeals";
 
 
-
 export default class Home extends Component {
   render(): React.ReactNode {
     return (
